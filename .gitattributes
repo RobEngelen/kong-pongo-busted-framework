@@ -1,0 +1,6 @@
+# Always use LF line endings, also when cloned on Windows with core.autocrlf=true.
+# CRLF breaks the shell scripts and Pongo hooks (.pongo/*.sh).
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary

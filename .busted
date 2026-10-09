@@ -1,0 +1,9 @@
+-- busted configuration, picked up by `pongo run` (copied to /kong inside the container).
+-- Coverage is off by default; enable it per run with: pongo run -- --coverage
+return {
+  default = {
+    verbose = true,
+    coverage = false,
+    output = "gtest",
+  },
+}
