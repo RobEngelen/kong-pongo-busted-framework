@@ -1,0 +1,32 @@
+# --- Kong / Pongo test artifacts -------------------------------------------
+servroot*/
+luacov.stats.out
+luacov.report.out
+luacov.report.html
+junit*.xml
+*.rock
+.containerid
+.pongo/.bash_history
+.pongo/.ash_history
+
+# --- Secrets: never commit Kong Enterprise licenses ------------------------
+*license*.json
+*.lic
+
+# --- Your own plugins -------------------------------------------------------
+# Plugins you drop into this workspace stay untracked, so customer code can't
+# end up in this shared repo by accident. Only the example-* plugins are
+# tracked. To share a new example, name it example-<something>.
+/kong/plugins/*
+!/kong/plugins/example-*/
+/spec/*
+!/spec/example-*/
+/*.rockspec
+!/kong-plugin-example-*.rockspec
+
+# --- Editors / OS -----------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
